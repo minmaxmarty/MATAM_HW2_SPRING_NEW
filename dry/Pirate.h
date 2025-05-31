@@ -24,8 +24,7 @@ private:
 public:
     Pirate();
 
-    Pirate(const string& name, int bounty);
-    Pirate(const string& name, DEVIL_FRUIT devilFruit = DEVIL_FRUIT::NONE);
+    Pirate(const string& name, int bounty, DEVIL_FRUIT devilFruit = DEVIL_FRUIT::NONE);
 
     ~Pirate() = default;
 
@@ -38,8 +37,6 @@ public:
 
     int getBounty() const;
 
-
-    string getName();
     DEVIL_FRUIT getDevilFruit();
 
     friend std::ostream &operator<<(std::ostream &os, const Pirate &pirate);
